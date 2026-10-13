@@ -1,0 +1,21 @@
+{
+  "name": "ms-inventario",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Microservicio de inventario de solo lectura para la Clase 7.",
+  "type": "module",
+  "engines": {
+    "node": "24.x"
+  },
+  "scripts": {
+    "test": "node --test",
+    "test:watch": "node --test --watch"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.3.0"
+  },
+  "devDependencies": {
+    "supertest": "^7.3.1"
+  }
+}
