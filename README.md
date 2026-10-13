@@ -8,10 +8,10 @@ Datos iniciales: `inventario.json` (97 documentos).
 
 Esta entrega implementa la infraestructura de Ibarra: configuración, conexión,
 consultas, carga repetible, arranque, pruebas y configuración de Render.
-**Las rutas HTTP, validaciones, CORS y manejo de errores corresponden a Bassi y
-todavía están pendientes.** `src/app.js` es el punto de integración; actualmente
-crea una aplicación Express sin rutas. Por eso un 404 HTTP en esta etapa es
-esperable y el Blueprint no debe desplegarse hasta completar `/health`.
+Las rutas HTTP, validaciones, CORS y manejo de errores de Bassi ya están integrados
+desde `main`. `src/app.js` construye la API y recibe el repositorio MongoDB desde
+el arranque de Ibarra. Las tres rutas están disponibles cuando Atlas es accesible
+y la semilla está cargada.
 
 La aplicación es de solo lectura. No hay endpoints para modificar stock.
 
@@ -39,6 +39,7 @@ Editar `.env` con la URI personal; nunca subirlo a Git:
 | `PORT` | `3000` local; Render proporciona su valor |
 | `SERVICE_NAME` | `ms-inventario-ibarra-bassi` |
 | `CORS_ORIGIN` | `https://ms-ecommerce-dashboard.onrender.com` |
+| `MONGODB_DNS_SERVERS` | Opcional, IP separadas por comas; vacío usa el DNS del sistema |
 
 Las variables ya presentes en el entorno tienen prioridad sobre `.env`. La
 contraseña de la URI debe estar codificada si contiene caracteres especiales.
@@ -69,6 +70,12 @@ documentos adicionales ya existentes ni borra la colección. Puede restaurar los
 valores de la semilla en documentos con el mismo `id`; coordinar su ejecución.
 La carga es manual y nunca se ejecuta durante el arranque o deploy.
 
+Si una red móvil devuelve `EBADRESP` al resolver Atlas, se puede configurar
+`MONGODB_DNS_SERVERS=1.1.1.1,8.8.8.8` en `.env`. Solo cambia el resolver del proceso
+Node, sin modificar Windows; no se necesita normalmente en Render. Si una red
+bloquea el puerto de MongoDB, cambiar de conexión. Tras cambiar de red, agregar
+la nueva IP pública a la lista de acceso de Atlas.
+
 Se mantienen los seis campos originales, con `actualizado` como cadena ISO UTC
 y sucursales como `SUC01`. `_id` es interno y se excluye de las consultas públicas.
 
@@ -98,7 +105,7 @@ Los errores del driver se convierten en `error.code === 'DATABASE_UNAVAILABLE'`;
 Bassi los traduce a 503. Los errores inesperados conservan su tipo para responder
 500. El repositorio no realiza validaciones HTTP ni genera respuestas JSON.
 
-Endpoints que debe completar Bassi:
+Endpoints implementados por Bassi:
 
 | Endpoint | Comportamiento |
 |---|---|
@@ -120,15 +127,15 @@ npm run test:integration
 ```
 
 `npm test` utiliza dobles de conexión y verifica configuración, consultas,
-proyección, errores, validación de semilla y ciclo de arranque/cierre. No necesita
-Atlas y es el comando que ejecuta GitHub Actions en los Pull Requests y `main`.
-Los tests de Bassi pueden añadirse como `test/unit/*.test.js`.
+proyección, errores, validación de semilla y ciclo de arranque/cierre, además de
+las pruebas HTTP de Bassi. No necesita Atlas y es el comando que ejecuta GitHub
+Actions en los Pull Requests y `main`. Incluye `test/*.test.js` y `test/unit/*.test.js`.
 
 `npm run test:integration` usa `.env`, solo lee Atlas y exige la semilla completa.
-Comprueba 97 registros, detalle, filtros, orden y paginación; no prueba endpoints
-HTTP todavía. No debe ejecutarse contra una colección con datos ajenos al ejercicio.
+Comprueba 97 registros, detalle, filtros, orden, paginación y la API HTTP conectada
+al repositorio real. No debe ejecutarse contra datos ajenos al ejercicio.
 
-Consultas HTTP a comprobar después de completar las rutas:
+Consultas HTTP del contrato:
 
 | Consulta | Resultado esperado |
 |---|---|
@@ -144,7 +151,7 @@ Consultas HTTP a comprobar después de completar las rutas:
 
 ## Despliegue en Render
 
-**Después de integrar la API de Bassi y verificar `/health`:**
+**Después de cargar la semilla y verificar `/health`:**
 
 1. Conectar este repositorio desde **New → Blueprint** para utilizar `render.yaml`,
    o crear un Web Service con los mismos valores: Node, Free, Virginia, `main`,

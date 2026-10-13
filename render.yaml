@@ -1,4 +1,4 @@
-# Crear el Blueprint después de integrar las rutas HTTP de Bassi.
+# Configuración del servicio integrado; cargar MONGODB_URI de forma privada en Render.
 services:
   - type: web
     name: ms-inventario-ibarra-bassi

@@ -3,6 +3,7 @@
 .env.*
 !.env.example
 *.env
+atlas-credentials.env
 !.env.example
 .codebase-memory/
 coverage/

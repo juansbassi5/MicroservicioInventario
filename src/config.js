@@ -1,5 +1,6 @@
 import dotenv from 'dotenv';
 import { fileURLToPath } from 'node:url';
+import { isIP } from 'node:net';
 
 export function loadEnvironment(env = process.env) {
   dotenv.config({ path: fileURLToPath(new URL('../.env', import.meta.url)), processEnv: env, quiet: true });
@@ -25,11 +26,17 @@ export function loadConfig(env = process.env) {
   if (!['http:', 'https:'].includes(parsedOrigin.protocol) || parsedOrigin.origin !== origin) {
     throw new Error('CORS_ORIGIN debe contener solo el origen HTTP, sin rutas ni credenciales.');
   }
+  const dnsServers = env.MONGODB_DNS_SERVERS?.trim()
+    ? env.MONGODB_DNS_SERVERS.split(',').map((server) => server.trim()) : [];
+  if (dnsServers.some((server) => !isIP(server))) {
+    throw new Error('MONGODB_DNS_SERVERS debe contener direcciones IP separadas por comas.');
+  }
   return Object.freeze({
     MONGODB_URI: uri,
     MONGODB_DB: database,
     PORT: Number(port),
     SERVICE_NAME: env.SERVICE_NAME?.trim() || 'ms-inventario-ibarra-bassi',
     CORS_ORIGIN: origin,
+    MONGODB_DNS_SERVERS: Object.freeze(dnsServers),
   });
 }

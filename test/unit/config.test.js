@@ -11,6 +11,14 @@ test('configuración con URI sola utiliza la base acordada y valores predetermin
   assert.equal(config.SERVICE_NAME, 'ms-inventario-ibarra-bassi');
   assert.equal(config.CORS_ORIGIN, 'https://ms-ecommerce-dashboard.onrender.com');
   assert.ok(Object.isFrozen(config));
+  assert.deepEqual(config.MONGODB_DNS_SERVERS, []);
+});
+
+test('DNS opcionales aceptan solo IP y permanecen desactivados por defecto', () => {
+  assert.deepEqual(loadConfig({ ...env, MONGODB_DNS_SERVERS: '1.1.1.1, 8.8.8.8' }).MONGODB_DNS_SERVERS, ['1.1.1.1', '8.8.8.8']);
+  for (const MONGODB_DNS_SERVERS of ['example.com', '1.1.1.1,', 'https://1.1.1.1']) {
+    assert.throws(() => loadConfig({ ...env, MONGODB_DNS_SERVERS }), /MONGODB_DNS_SERVERS/);
+  }
 });
 
 test('configuración respeta variables de Render y rechaza valores inválidos', () => {

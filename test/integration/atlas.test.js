@@ -4,15 +4,20 @@ import { readFile } from 'node:fs/promises';
 import { loadConfig, loadEnvironment } from '../../src/config.js';
 import { connectToMongo } from '../../src/database/mongo.js';
 import { createInventoryRepository } from '../../src/repositories/inventoryRepository.js';
+import { createApp } from '../../src/app.js';
+import request from 'supertest';
 
 const seed = JSON.parse(await readFile(new URL('../../inventario.json', import.meta.url), 'utf8'));
 let connection;
 let repository;
+let app;
 
 before(async () => {
   try {
-    connection = await connectToMongo(loadConfig(loadEnvironment()));
+    const config = loadConfig(loadEnvironment());
+    connection = await connectToMongo(config);
     repository = createInventoryRepository(connection.database);
+    app = createApp({ inventoryRepository: repository, config });
   } catch {
     throw new Error('No se pudo conectar a Atlas. Revisá .env, credenciales e IP Access List.');
   }
@@ -41,4 +46,18 @@ test('Atlas: filtros AND, resultados inexistentes y offset fuera de rango', asyn
   assert.equal(pair.items[0].id, 'INV002');
   assert.deepEqual(await repository.list({ productoId: 'PRD999' }), { items: [], total: 0 });
   assert.deepEqual(await repository.list({ offset: 1000 }), { items: [], total: 97 });
+});
+
+test('API integrada: health, filtros normalizados, paginación y errores usando Atlas real', async () => {
+  const health = await request(app).get('/health').expect(200);
+  assert.equal(health.body.collection, 'inventario');
+  const page = await request(app).get('/items?limit=5&offset=5').expect(200);
+  assert.equal(page.body.total, 97);
+  assert.equal(page.body.items[0].id, 'INV006');
+  const filtered = await request(app).get('/items?productoId=prd001&sucursalId=suc02').expect(200);
+  assert.equal(filtered.body.total, 1);
+  assert.equal(filtered.body.items[0].id, 'INV002');
+  await request(app).get('/items/INV001').expect(200, seed[0]);
+  await request(app).get('/items/INV999').expect(404);
+  await request(app).get('/items?limit=101').expect(400);
 });

@@ -1,11 +1,12 @@
 # Integración de la API de Juan Bassi
 
-La infraestructura está en una rama separada para revisión. Antes de implementar
-la API, integrar este Pull Request a `main` o crear la rama de trabajo desde él.
+La API de Bassi ya fue integrada en `main`. Esta rama incorpora esa implementación
+y agrega la infraestructura de Ibarra. El documento describe la interfaz común
+para futuras modificaciones.
 
 ## Punto de entrada
 
-Completar `src/app.js` conservando la exportación:
+`src/app.js` conserva la exportación:
 
 ```js
 export function createApp({ inventoryRepository, config }) {
@@ -30,7 +31,7 @@ No devolver ni imprimir `config`, porque contiene la URI.
 
 ## Contrato a completar
 
-Implementar las tres rutas del archivo `inventario.yaml`:
+Las tres rutas del archivo `inventario.yaml` ya están implementadas:
 
 1. `/health`: llamar `checkHealth()` y responder 200 con estado `ok`, nombre de
    servicio configurado, colección `inventario` y versión `1.0.0`.
@@ -46,10 +47,8 @@ sin Origin. No agregar endpoints de escritura.
 
 ## Pruebas y deploy
 
-Agregar pruebas HTTP con `supertest` y repositorio simulado en `test/unit/`.
-`npm test` corre sin Atlas; `npm run test:integration` comprueba lectura real de
-la semilla y necesita configuración local y datos cargados.
-
-La aplicación base aún no registra rutas: un 404 HTTP es esperable hasta completar
-esta parte. El `render.yaml` ya apunta a `/health`, por lo que el servicio no debe
-desplegarse ni registrarse en el dashboard antes de integrar la API.
+Las pruebas HTTP de Bassi están en `test/app.test.js`; los tests de infraestructura
+están en `test/unit/`. `npm test` ejecuta ambos grupos sin Atlas.
+`npm run test:integration` verifica la semilla y la API contra Atlas y necesita
+configuración local y datos cargados. El `render.yaml` ya apunta a `/health`;
+verificarlo antes de desplegar y registrar la URL pública.
