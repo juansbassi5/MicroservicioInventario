@@ -15,6 +15,20 @@ y la semilla está cargada.
 
 La aplicación es de solo lectura. No hay endpoints para modificar stock.
 
+## Servicio publicado
+
+- URL base: [ms-inventario-ibarra-bassi](https://ms-inventario-ibarra-bassi.onrender.com).
+- Salud: [GET /health](https://ms-inventario-ibarra-bassi.onrender.com/health).
+- Listado: [GET /items](https://ms-inventario-ibarra-bassi.onrender.com/items).
+- [PR #2 integrado a main](https://github.com/juansbassi5/MicroservicioInventario/pull/2).
+- Registrado como **MS-inventario ONLINE** en el dashboard del ejercicio el 13/10/2026.
+
+Validación de la entrega: 47 pruebas offline, 4 pruebas de integración con Atlas
+(incluida la API HTTP), CI correcto y carga repetida conservando 97 documentos.
+Para este ejercicio, el equipo eligió utilizar en Render la URI existente; el
+procedimiento de usuario exclusivo de lectura se mantiene como configuración
+recomendada para futuros despliegues.
+
 ## Instalación local
 
 Requisitos: Git, Node.js **24.x**, npm y acceso al cluster compartido de Atlas.
@@ -165,7 +179,7 @@ Consultas HTTP del contrato:
    [dashboard](https://ms-ecommerce-dashboard.onrender.com/), seleccionando
    `MS-inventario`, grupo `Ibarra-Bassi` y los dos estudiantes, uno por línea.
 
-Todavía no hay una URL de Render registrada por esta entrega. Render Free puede
+Render Free puede
 suspenderse después de 15 minutos sin tráfico y tardar aproximadamente un minuto
 en reactivarse: abrir `/health` antes de presentar.
 
