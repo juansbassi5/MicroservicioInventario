@@ -5,7 +5,7 @@
   "description": "Microservicio de inventario de solo lectura para la Clase 7.",
   "type": "module",
   "engines": {
-    "node": ">=24 <27"
+    "node": "24.x"
   },
   "scripts": {
     "test": "node --test",
