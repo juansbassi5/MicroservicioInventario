@@ -1,0 +1,23 @@
+# Crear el Blueprint después de integrar las rutas HTTP de Bassi.
+services:
+  - type: web
+    name: ms-inventario-ibarra-bassi
+    runtime: node
+    plan: free
+    region: virginia
+    branch: main
+    buildCommand: npm ci
+    startCommand: npm start
+    healthCheckPath: /health
+    autoDeployTrigger: checksPass
+    envVars:
+      - key: MONGODB_URI
+        sync: false
+      - key: MONGODB_DB
+        value: clase7_inventario
+      - key: SERVICE_NAME
+        value: ms-inventario-ibarra-bassi
+      - key: CORS_ORIGIN
+        value: https://ms-ecommerce-dashboard.onrender.com
+      - key: NODE_ENV
+        value: production
