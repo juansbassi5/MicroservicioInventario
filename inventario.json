@@ -1,0 +1,778 @@
+[
+  {
+    "id": "INV001",
+    "productoId": "PRD001",
+    "sucursalId": "SUC01",
+    "stock": 3,
+    "stockMinimo": 5,
+    "actualizado": "2026-10-10T06:00:00Z"
+  },
+  {
+    "id": "INV002",
+    "productoId": "PRD001",
+    "sucursalId": "SUC02",
+    "stock": 25,
+    "stockMinimo": 10,
+    "actualizado": "2026-10-10T06:00:00Z"
+  },
+  {
+    "id": "INV003",
+    "productoId": "PRD002",
+    "sucursalId": "SUC02",
+    "stock": 40,
+    "stockMinimo": 10,
+    "actualizado": "2026-10-10T06:00:00Z"
+  },
+  {
+    "id": "INV004",
+    "productoId": "PRD003",
+    "sucursalId": "SUC03",
+    "stock": 8,
+    "stockMinimo": 5,
+    "actualizado": "2026-10-10T06:00:00Z"
+  },
+  {
+    "id": "INV005",
+    "productoId": "PRD004",
+    "sucursalId": "SUC02",
+    "stock": 0,
+    "stockMinimo": 3,
+    "actualizado": "2026-10-10T06:00:00Z"
+  },
+  {
+    "id": "INV006",
+    "productoId": "PRD005",
+    "sucursalId": "SUC01",
+    "stock": 60,
+    "stockMinimo": 15,
+    "actualizado": "2026-10-10T06:00:00Z"
+  },
+  {
+    "id": "INV007",
+    "productoId": "PRD005",
+    "sucursalId": "SUC04",
+    "stock": 120,
+    "stockMinimo": 30,
+    "actualizado": "2026-10-10T06:00:00Z"
+  },
+  {
+    "id": "INV008",
+    "productoId": "PRD006",
+    "sucursalId": "SUC03",
+    "stock": 12,
+    "stockMinimo": 5,
+    "actualizado": "2026-10-10T06:00:00Z"
+  },
+  {
+    "id": "INV009",
+    "productoId": "PRD007",
+    "sucursalId": "SUC05",
+    "stock": 4,
+    "stockMinimo": 8,
+    "actualizado": "2026-10-10T06:00:00Z"
+  },
+  {
+    "id": "INV010",
+    "productoId": "PRD008",
+    "sucursalId": "SUC01",
+    "stock": 22,
+    "stockMinimo": 8,
+    "actualizado": "2026-10-10T06:00:00Z"
+  },
+  {
+    "id": "INV011",
+    "productoId": "PRD009",
+    "sucursalId": "SUC05",
+    "stock": 6,
+    "stockMinimo": 8,
+    "actualizado": "2026-10-10T06:00:00Z"
+  },
+  {
+    "id": "INV012",
+    "productoId": "PRD010",
+    "sucursalId": "SUC04",
+    "stock": 90,
+    "stockMinimo": 20,
+    "actualizado": "2026-10-10T06:00:00Z"
+  },
+  {
+    "id": "INV013",
+    "productoId": "PRD011",
+    "sucursalId": "SUC02",
+    "stock": 35,
+    "stockMinimo": 10,
+    "actualizado": "2026-10-10T06:00:00Z"
+  },
+  {
+    "id": "INV014",
+    "productoId": "PRD012",
+    "sucursalId": "SUC04",
+    "stock": 14,
+    "stockMinimo": 5,
+    "actualizado": "2026-10-10T06:00:00Z"
+  },
+  {
+    "id": "INV015",
+    "productoId": "PRD003",
+    "sucursalId": "SUC04",
+    "stock": 30,
+    "stockMinimo": 8,
+    "actualizado": "2026-10-10T06:00:00Z"
+  },
+  {
+    "id": "INV016",
+    "productoId": "PRD008",
+    "sucursalId": "SUC04",
+    "stock": 55,
+    "stockMinimo": 15,
+    "actualizado": "2026-10-10T06:00:00Z"
+  },
+  {
+    "id": "INV017",
+    "productoId": "PRD005",
+    "sucursalId": "SUC06",
+    "stock": 40,
+    "stockMinimo": 10,
+    "actualizado": "2026-10-10T06:00:00Z"
+  },
+  {
+    "id": "INV018",
+    "productoId": "PRD001",
+    "sucursalId": "SUC03",
+    "stock": 4,
+    "stockMinimo": 21,
+    "actualizado": "2026-10-09T06:00:00Z"
+  },
+  {
+    "id": "INV019",
+    "productoId": "PRD002",
+    "sucursalId": "SUC06",
+    "stock": 127,
+    "stockMinimo": 37,
+    "actualizado": "2026-10-10T06:00:00Z"
+  },
+  {
+    "id": "INV020",
+    "productoId": "PRD002",
+    "sucursalId": "SUC08",
+    "stock": 28,
+    "stockMinimo": 15,
+    "actualizado": "2026-10-11T06:00:00Z"
+  },
+  {
+    "id": "INV021",
+    "productoId": "PRD003",
+    "sucursalId": "SUC02",
+    "stock": 48,
+    "stockMinimo": 13,
+    "actualizado": "2026-10-11T06:00:00Z"
+  },
+  {
+    "id": "INV022",
+    "productoId": "PRD003",
+    "sucursalId": "SUC06",
+    "stock": 71,
+    "stockMinimo": 31,
+    "actualizado": "2026-10-11T06:00:00Z"
+  },
+  {
+    "id": "INV023",
+    "productoId": "PRD005",
+    "sucursalId": "SUC08",
+    "stock": 48,
+    "stockMinimo": 25,
+    "actualizado": "2026-10-09T06:00:00Z"
+  },
+  {
+    "id": "INV024",
+    "productoId": "PRD005",
+    "sucursalId": "SUC05",
+    "stock": 0,
+    "stockMinimo": 25,
+    "actualizado": "2026-10-09T06:00:00Z"
+  },
+  {
+    "id": "INV025",
+    "productoId": "PRD006",
+    "sucursalId": "SUC07",
+    "stock": 32,
+    "stockMinimo": 10,
+    "actualizado": "2026-10-09T06:00:00Z"
+  },
+  {
+    "id": "INV026",
+    "productoId": "PRD006",
+    "sucursalId": "SUC06",
+    "stock": 12,
+    "stockMinimo": 26,
+    "actualizado": "2026-10-11T06:00:00Z"
+  },
+  {
+    "id": "INV027",
+    "productoId": "PRD008",
+    "sucursalId": "SUC07",
+    "stock": 12,
+    "stockMinimo": 13,
+    "actualizado": "2026-10-10T06:00:00Z"
+  },
+  {
+    "id": "INV028",
+    "productoId": "PRD008",
+    "sucursalId": "SUC03",
+    "stock": 51,
+    "stockMinimo": 13,
+    "actualizado": "2026-10-10T06:00:00Z"
+  },
+  {
+    "id": "INV029",
+    "productoId": "PRD010",
+    "sucursalId": "SUC06",
+    "stock": 149,
+    "stockMinimo": 31,
+    "actualizado": "2026-10-09T06:00:00Z"
+  },
+  {
+    "id": "INV030",
+    "productoId": "PRD011",
+    "sucursalId": "SUC07",
+    "stock": 39,
+    "stockMinimo": 21,
+    "actualizado": "2026-10-09T06:00:00Z"
+  },
+  {
+    "id": "INV031",
+    "productoId": "PRD012",
+    "sucursalId": "SUC06",
+    "stock": 23,
+    "stockMinimo": 21,
+    "actualizado": "2026-10-11T06:00:00Z"
+  },
+  {
+    "id": "INV032",
+    "productoId": "PRD013",
+    "sucursalId": "SUC05",
+    "stock": 54,
+    "stockMinimo": 13,
+    "actualizado": "2026-10-10T06:00:00Z"
+  },
+  {
+    "id": "INV033",
+    "productoId": "PRD013",
+    "sucursalId": "SUC02",
+    "stock": 0,
+    "stockMinimo": 13,
+    "actualizado": "2026-10-09T06:00:00Z"
+  },
+  {
+    "id": "INV034",
+    "productoId": "PRD013",
+    "sucursalId": "SUC04",
+    "stock": 156,
+    "stockMinimo": 31,
+    "actualizado": "2026-10-09T06:00:00Z"
+  },
+  {
+    "id": "INV035",
+    "productoId": "PRD013",
+    "sucursalId": "SUC06",
+    "stock": 83,
+    "stockMinimo": 31,
+    "actualizado": "2026-10-09T06:00:00Z"
+  },
+  {
+    "id": "INV036",
+    "productoId": "PRD013",
+    "sucursalId": "SUC08",
+    "stock": 35,
+    "stockMinimo": 13,
+    "actualizado": "2026-10-11T06:00:00Z"
+  },
+  {
+    "id": "INV037",
+    "productoId": "PRD014",
+    "sucursalId": "SUC01",
+    "stock": 11,
+    "stockMinimo": 0,
+    "actualizado": "2026-10-09T06:00:00Z"
+  },
+  {
+    "id": "INV038",
+    "productoId": "PRD014",
+    "sucursalId": "SUC03",
+    "stock": 4,
+    "stockMinimo": 0,
+    "actualizado": "2026-10-11T06:00:00Z"
+  },
+  {
+    "id": "INV039",
+    "productoId": "PRD014",
+    "sucursalId": "SUC06",
+    "stock": 6,
+    "stockMinimo": 0,
+    "actualizado": "2026-10-11T06:00:00Z"
+  },
+  {
+    "id": "INV040",
+    "productoId": "PRD014",
+    "sucursalId": "SUC02",
+    "stock": 7,
+    "stockMinimo": 0,
+    "actualizado": "2026-10-10T06:00:00Z"
+  },
+  {
+    "id": "INV041",
+    "productoId": "PRD015",
+    "sucursalId": "SUC02",
+    "stock": 23,
+    "stockMinimo": 6,
+    "actualizado": "2026-10-11T06:00:00Z"
+  },
+  {
+    "id": "INV042",
+    "productoId": "PRD015",
+    "sucursalId": "SUC01",
+    "stock": 15,
+    "stockMinimo": 6,
+    "actualizado": "2026-10-11T06:00:00Z"
+  },
+  {
+    "id": "INV043",
+    "productoId": "PRD015",
+    "sucursalId": "SUC06",
+    "stock": 57,
+    "stockMinimo": 16,
+    "actualizado": "2026-10-11T06:00:00Z"
+  },
+  {
+    "id": "INV044",
+    "productoId": "PRD016",
+    "sucursalId": "SUC07",
+    "stock": 26,
+    "stockMinimo": 10,
+    "actualizado": "2026-10-09T06:00:00Z"
+  },
+  {
+    "id": "INV045",
+    "productoId": "PRD016",
+    "sucursalId": "SUC05",
+    "stock": 0,
+    "stockMinimo": 10,
+    "actualizado": "2026-10-09T06:00:00Z"
+  },
+  {
+    "id": "INV046",
+    "productoId": "PRD016",
+    "sucursalId": "SUC02",
+    "stock": 45,
+    "stockMinimo": 10,
+    "actualizado": "2026-10-11T06:00:00Z"
+  },
+  {
+    "id": "INV047",
+    "productoId": "PRD016",
+    "sucursalId": "SUC08",
+    "stock": 21,
+    "stockMinimo": 10,
+    "actualizado": "2026-10-09T06:00:00Z"
+  },
+  {
+    "id": "INV048",
+    "productoId": "PRD017",
+    "sucursalId": "SUC02",
+    "stock": 112,
+    "stockMinimo": 29,
+    "actualizado": "2026-10-10T06:00:00Z"
+  },
+  {
+    "id": "INV049",
+    "productoId": "PRD017",
+    "sucursalId": "SUC05",
+    "stock": 77,
+    "stockMinimo": 29,
+    "actualizado": "2026-10-09T06:00:00Z"
+  },
+  {
+    "id": "INV050",
+    "productoId": "PRD017",
+    "sucursalId": "SUC06",
+    "stock": 221,
+    "stockMinimo": 74,
+    "actualizado": "2026-10-11T06:00:00Z"
+  },
+  {
+    "id": "INV051",
+    "productoId": "PRD018",
+    "sucursalId": "SUC02",
+    "stock": 92,
+    "stockMinimo": 25,
+    "actualizado": "2026-10-11T06:00:00Z"
+  },
+  {
+    "id": "INV052",
+    "productoId": "PRD018",
+    "sucursalId": "SUC04",
+    "stock": 249,
+    "stockMinimo": 63,
+    "actualizado": "2026-10-11T06:00:00Z"
+  },
+  {
+    "id": "INV053",
+    "productoId": "PRD018",
+    "sucursalId": "SUC07",
+    "stock": 59,
+    "stockMinimo": 25,
+    "actualizado": "2026-10-09T06:00:00Z"
+  },
+  {
+    "id": "INV054",
+    "productoId": "PRD018",
+    "sucursalId": "SUC01",
+    "stock": 79,
+    "stockMinimo": 25,
+    "actualizado": "2026-10-09T06:00:00Z"
+  },
+  {
+    "id": "INV055",
+    "productoId": "PRD019",
+    "sucursalId": "SUC06",
+    "stock": 42,
+    "stockMinimo": 16,
+    "actualizado": "2026-10-11T06:00:00Z"
+  },
+  {
+    "id": "INV056",
+    "productoId": "PRD019",
+    "sucursalId": "SUC08",
+    "stock": 31,
+    "stockMinimo": 6,
+    "actualizado": "2026-10-11T06:00:00Z"
+  },
+  {
+    "id": "INV057",
+    "productoId": "PRD019",
+    "sucursalId": "SUC01",
+    "stock": 7,
+    "stockMinimo": 6,
+    "actualizado": "2026-10-09T06:00:00Z"
+  },
+  {
+    "id": "INV058",
+    "productoId": "PRD020",
+    "sucursalId": "SUC01",
+    "stock": 9,
+    "stockMinimo": 10,
+    "actualizado": "2026-10-10T06:00:00Z"
+  },
+  {
+    "id": "INV059",
+    "productoId": "PRD020",
+    "sucursalId": "SUC03",
+    "stock": 46,
+    "stockMinimo": 10,
+    "actualizado": "2026-10-10T06:00:00Z"
+  },
+  {
+    "id": "INV060",
+    "productoId": "PRD020",
+    "sucursalId": "SUC04",
+    "stock": 92,
+    "stockMinimo": 26,
+    "actualizado": "2026-10-11T06:00:00Z"
+  },
+  {
+    "id": "INV061",
+    "productoId": "PRD020",
+    "sucursalId": "SUC07",
+    "stock": 31,
+    "stockMinimo": 10,
+    "actualizado": "2026-10-09T06:00:00Z"
+  },
+  {
+    "id": "INV062",
+    "productoId": "PRD020",
+    "sucursalId": "SUC08",
+    "stock": 25,
+    "stockMinimo": 10,
+    "actualizado": "2026-10-09T06:00:00Z"
+  },
+  {
+    "id": "INV063",
+    "productoId": "PRD021",
+    "sucursalId": "SUC04",
+    "stock": 83,
+    "stockMinimo": 21,
+    "actualizado": "2026-10-10T06:00:00Z"
+  },
+  {
+    "id": "INV064",
+    "productoId": "PRD021",
+    "sucursalId": "SUC07",
+    "stock": 30,
+    "stockMinimo": 8,
+    "actualizado": "2026-10-11T06:00:00Z"
+  },
+  {
+    "id": "INV065",
+    "productoId": "PRD021",
+    "sucursalId": "SUC02",
+    "stock": 19,
+    "stockMinimo": 8,
+    "actualizado": "2026-10-11T06:00:00Z"
+  },
+  {
+    "id": "INV066",
+    "productoId": "PRD022",
+    "sucursalId": "SUC08",
+    "stock": 25,
+    "stockMinimo": 6,
+    "actualizado": "2026-10-09T06:00:00Z"
+  },
+  {
+    "id": "INV067",
+    "productoId": "PRD022",
+    "sucursalId": "SUC04",
+    "stock": 52,
+    "stockMinimo": 16,
+    "actualizado": "2026-10-09T06:00:00Z"
+  },
+  {
+    "id": "INV068",
+    "productoId": "PRD022",
+    "sucursalId": "SUC06",
+    "stock": 76,
+    "stockMinimo": 16,
+    "actualizado": "2026-10-11T06:00:00Z"
+  },
+  {
+    "id": "INV069",
+    "productoId": "PRD023",
+    "sucursalId": "SUC01",
+    "stock": 14,
+    "stockMinimo": 5,
+    "actualizado": "2026-10-10T06:00:00Z"
+  },
+  {
+    "id": "INV070",
+    "productoId": "PRD023",
+    "sucursalId": "SUC07",
+    "stock": 15,
+    "stockMinimo": 5,
+    "actualizado": "2026-10-11T06:00:00Z"
+  },
+  {
+    "id": "INV071",
+    "productoId": "PRD023",
+    "sucursalId": "SUC03",
+    "stock": 15,
+    "stockMinimo": 5,
+    "actualizado": "2026-10-10T06:00:00Z"
+  },
+  {
+    "id": "INV072",
+    "productoId": "PRD024",
+    "sucursalId": "SUC01",
+    "stock": 80,
+    "stockMinimo": 17,
+    "actualizado": "2026-10-09T06:00:00Z"
+  },
+  {
+    "id": "INV073",
+    "productoId": "PRD024",
+    "sucursalId": "SUC06",
+    "stock": 168,
+    "stockMinimo": 42,
+    "actualizado": "2026-10-10T06:00:00Z"
+  },
+  {
+    "id": "INV074",
+    "productoId": "PRD024",
+    "sucursalId": "SUC05",
+    "stock": 110,
+    "stockMinimo": 17,
+    "actualizado": "2026-10-10T06:00:00Z"
+  },
+  {
+    "id": "INV075",
+    "productoId": "PRD025",
+    "sucursalId": "SUC03",
+    "stock": 16,
+    "stockMinimo": 6,
+    "actualizado": "2026-10-11T06:00:00Z"
+  },
+  {
+    "id": "INV076",
+    "productoId": "PRD025",
+    "sucursalId": "SUC08",
+    "stock": 19,
+    "stockMinimo": 6,
+    "actualizado": "2026-10-10T06:00:00Z"
+  },
+  {
+    "id": "INV077",
+    "productoId": "PRD025",
+    "sucursalId": "SUC06",
+    "stock": 43,
+    "stockMinimo": 16,
+    "actualizado": "2026-10-10T06:00:00Z"
+  },
+  {
+    "id": "INV078",
+    "productoId": "PRD025",
+    "sucursalId": "SUC04",
+    "stock": 52,
+    "stockMinimo": 16,
+    "actualizado": "2026-10-11T06:00:00Z"
+  },
+  {
+    "id": "INV079",
+    "productoId": "PRD026",
+    "sucursalId": "SUC04",
+    "stock": 73,
+    "stockMinimo": 52,
+    "actualizado": "2026-10-10T06:00:00Z"
+  },
+  {
+    "id": "INV080",
+    "productoId": "PRD026",
+    "sucursalId": "SUC08",
+    "stock": 52,
+    "stockMinimo": 21,
+    "actualizado": "2026-10-09T06:00:00Z"
+  },
+  {
+    "id": "INV081",
+    "productoId": "PRD026",
+    "sucursalId": "SUC01",
+    "stock": 64,
+    "stockMinimo": 21,
+    "actualizado": "2026-10-10T06:00:00Z"
+  },
+  {
+    "id": "INV082",
+    "productoId": "PRD026",
+    "sucursalId": "SUC05",
+    "stock": 51,
+    "stockMinimo": 21,
+    "actualizado": "2026-10-09T06:00:00Z"
+  },
+  {
+    "id": "INV083",
+    "productoId": "PRD027",
+    "sucursalId": "SUC08",
+    "stock": 7,
+    "stockMinimo": 6,
+    "actualizado": "2026-10-09T06:00:00Z"
+  },
+  {
+    "id": "INV084",
+    "productoId": "PRD027",
+    "sucursalId": "SUC05",
+    "stock": 32,
+    "stockMinimo": 6,
+    "actualizado": "2026-10-09T06:00:00Z"
+  },
+  {
+    "id": "INV085",
+    "productoId": "PRD027",
+    "sucursalId": "SUC03",
+    "stock": 0,
+    "stockMinimo": 6,
+    "actualizado": "2026-10-11T06:00:00Z"
+  },
+  {
+    "id": "INV086",
+    "productoId": "PRD028",
+    "sucursalId": "SUC07",
+    "stock": 10,
+    "stockMinimo": 3,
+    "actualizado": "2026-10-10T06:00:00Z"
+  },
+  {
+    "id": "INV087",
+    "productoId": "PRD028",
+    "sucursalId": "SUC02",
+    "stock": 13,
+    "stockMinimo": 3,
+    "actualizado": "2026-10-10T06:00:00Z"
+  },
+  {
+    "id": "INV088",
+    "productoId": "PRD028",
+    "sucursalId": "SUC04",
+    "stock": 9,
+    "stockMinimo": 6,
+    "actualizado": "2026-10-09T06:00:00Z"
+  },
+  {
+    "id": "INV089",
+    "productoId": "PRD028",
+    "sucursalId": "SUC08",
+    "stock": 8,
+    "stockMinimo": 3,
+    "actualizado": "2026-10-09T06:00:00Z"
+  },
+  {
+    "id": "INV090",
+    "productoId": "PRD029",
+    "sucursalId": "SUC06",
+    "stock": 54,
+    "stockMinimo": 16,
+    "actualizado": "2026-10-11T06:00:00Z"
+  },
+  {
+    "id": "INV091",
+    "productoId": "PRD029",
+    "sucursalId": "SUC08",
+    "stock": 19,
+    "stockMinimo": 6,
+    "actualizado": "2026-10-09T06:00:00Z"
+  },
+  {
+    "id": "INV092",
+    "productoId": "PRD029",
+    "sucursalId": "SUC02",
+    "stock": 2,
+    "stockMinimo": 6,
+    "actualizado": "2026-10-10T06:00:00Z"
+  },
+  {
+    "id": "INV093",
+    "productoId": "PRD029",
+    "sucursalId": "SUC01",
+    "stock": 22,
+    "stockMinimo": 6,
+    "actualizado": "2026-10-10T06:00:00Z"
+  },
+  {
+    "id": "INV094",
+    "productoId": "PRD029",
+    "sucursalId": "SUC07",
+    "stock": 15,
+    "stockMinimo": 6,
+    "actualizado": "2026-10-09T06:00:00Z"
+  },
+  {
+    "id": "INV095",
+    "productoId": "PRD030",
+    "sucursalId": "SUC06",
+    "stock": 43,
+    "stockMinimo": 16,
+    "actualizado": "2026-10-10T06:00:00Z"
+  },
+  {
+    "id": "INV096",
+    "productoId": "PRD030",
+    "sucursalId": "SUC01",
+    "stock": 22,
+    "stockMinimo": 6,
+    "actualizado": "2026-10-10T06:00:00Z"
+  },
+  {
+    "id": "INV097",
+    "productoId": "PRD030",
+    "sucursalId": "SUC03",
+    "stock": 18,
+    "stockMinimo": 6,
+    "actualizado": "2026-10-11T06:00:00Z"
+  }
+]
